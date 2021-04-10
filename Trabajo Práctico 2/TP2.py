@@ -142,18 +142,7 @@ por ej. condicion_1 and condicion_2 - condicion_1 or condicion_2
 # a. Si la tarjeta es Visa se debe aplicar un recargo del 7 %
 # b. Si la tarjeta es Mastercard se le aplica un recargo del 11%
 
-monto = float(input('ingrese el monto de la compra'))
-tarjeta = input('ingrese tarjeta')
-
-if(tarjeta == 'visa'):
-    print("el monto es ", monto * 1.07)
-elif(tarjeta == 'mastercard'):
-    print('el monto es ', monto * 1.11)
-else:
-    print('el monto es ', monto)
-
-
-
+#
 
 
 #ejercicio 10

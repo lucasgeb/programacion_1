@@ -6,4 +6,12 @@
 #! a. de F a C: (temp_f - 32) * 5/9
 #! b. de C a F: (temp_c * 5/9) + 32
 
-#? Pensar como.
+temperatura = float(input('ingrese el valor de la temperatura '))
+escala = int(input('ingrerse la escala C/F'))
+
+if(escala == "C"):
+    print('la temperatura en grados Farenheit es', (temperatura * 9/5) + 32)
+elif(escala == "F"):
+    print("la temperatura en grados celcius es", (temperatura - 32) * 9/5)
+else:
+    print('la escala ingresada es incorrecta')
