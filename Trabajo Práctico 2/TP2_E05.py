@@ -1,10 +1,12 @@
 
-#! ejercicio 5
-#! Resuelva el ejercicio de 3 de la guía uno aplicando el filtro para los CV.
+"""
+Ejercicio 5
+Resuelva el ejercicio de 3 de la guía uno aplicando el filtro para los CV.
 
-#! El área de RRHH de una empresa desea filtrar los CV de los postulantes para un puesto
-#! vacante, el requisito mínimo es la edad, pero en los datos solo tienen la fecha de
-#! nacimiento.
+El área de RRHH de una empresa desea filtrar los CV de los postulantes para un puesto
+vacante, el requisito mínimo es la edad, pero en los datos solo tienen la fecha de
+nacimiento.
+"""
 
 ano_actual = int(input("ingrese año actual "))
 ano_nacimiento = int(input('ingrese año de nacimiento del postulante '))

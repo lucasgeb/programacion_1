@@ -1,6 +1,7 @@
-
-#! ejercicio 12
-#! Dado un número de mes (de 1 a 12) determinar cuántos días tiene dicho mes
+"""
+Ejercicio 12
+Dado un número de mes (de 1 a 12) determinar cuántos días tiene dicho mes
+"""
 
 mes = int(input("Ingrese el número del 1 al 12 correspondiente al mes: "))
 

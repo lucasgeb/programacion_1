@@ -1,6 +1,8 @@
 
-#! ejercicio 11
-#! Determinar si un número está dentro del rango de -15 hasta 81
+"""
+Ejercicio 11
+Determinar si un número está dentro del rango de -15 hasta 81
+"""
 
 numero = int(input("ingrese un numero"))
 

@@ -1,7 +1,7 @@
-
-#! ejercicio 19
-#! Dado tres números mostrarlos en orden ascendente.
-
+"""
+Ejercicio 19
+Dado tres números mostrarlos en orden ascendente.
+"""
 numero_1 = int(input("ingrese el primer número "))
 numero_2 = int(input("ingrese el segundo número "))
 numero_3 = int(input("ingrese el tercer número "))

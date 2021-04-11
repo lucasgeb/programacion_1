@@ -1,6 +1,8 @@
 
-#! Ejercicio 1 
-#! Dado un número determinar si es menor que 19.
+"""
+Ejercicio 1 
+Dado un número determinar si es menor que 19.
+"""
 
 numero = int(input('ingrese un numero '))
 if(numero < 19):
@@ -9,3 +11,4 @@ else:
     print('el numero es mayor')
 
 print('fin del algoritmo')
+

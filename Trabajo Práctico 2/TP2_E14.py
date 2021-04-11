@@ -1,11 +1,21 @@
+"""
+Ejercicio 14
+Dada una fecha en formato día/mes determinar si la misma es correcta.
+"""
 
-#! ejercicio 14
-#! Dada una fecha en formato día/mes determinar si la misma es correcta.
+dias = int(input("ingrese el día"))
+mes = int(input("Ingrese el número del 1 al 12 correspondiente al mes: "))
 
-fecha_ok = input('ingrese la fecha en formato DD/MM correcta: ')
-fecha_a_determinar = input('ingrese la fecha en formato DD/MM a corroborar ')
-
-if(fecha_ok == fecha_a_determinar):
-    print("la fecha es correcta")
-else:
+if(mes == 2 and dias > 28):
     print("la fecha es incorrecta")
+elif(mes == 2 and dias <= 28):
+    print("la fecha es correcta")
+elif(mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12 and dias > 31):
+    print("la fecha es incorrecta")
+elif(mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12 and dias <= 31):
+    print('la fecha es correcta')
+elif(mes == 4 or mes == 6 or mes == 9 or mes == 11 and dias > 30):
+    print("la fecha es incorrecta")
+else:
+    print('la fecha es correcta')
+

@@ -1,6 +1,8 @@
 
-#! ejercicio 17
-#! Dado dos números mostrar la diferencia entre el mayor y el menor.
+"""
+Ejercicio 17
+Dado dos números mostrar la diferencia entre el mayor y el menor.
+"""
 
 numero_1 = float(input("ingrese el primer número: "))
 numero_2 = float(input("ingrese el segundo número: "))

@@ -1,6 +1,8 @@
 
-#! ejercicio 2
-#! Determinar si un número dado es positivo o negativo.
+"""
+Ejercicio 2
+Determinar si un número dado es positivo o negativo.
+"""
 
 numero = int(input('ingrese un numero '))
 if(numero > 0):

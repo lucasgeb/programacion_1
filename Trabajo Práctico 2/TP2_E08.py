@@ -1,12 +1,14 @@
 
-#! 8. Ahora modifique el ejercicio anterior en el que además se conoce el número de cuotas en
-#! la que paga, y aplicar los siguientes criterios para obtener el monto final (los recargos por
-#! cuotas son los mismos para cualquier tarjeta):
-#! a. Si paga en una cuota no hay recargo por cuotas
-#! b. Si paga en tres cuotas el recargo es del 3 %
-#! c. Si paga en ocho el recargo es del 17 %
-#! d. Si paga en doce el recargo es del 32 %
-
+"""
+Ejercicio 8.
+Ahora modifique el ejercicio anterior en el que además se conoce el número de cuotas en
+la que paga, y aplicar los siguientes criterios para obtener el monto final (los recargos por
+cuotas son los mismos para cualquier tarjeta):
+a. Si paga en una cuota no hay recargo por cuotas
+b. Si paga en tres cuotas el recargo es del 3 %
+c. Si paga en ocho el recargo es del 17 %
+d. Si paga en doce el recargo es del 32 %
+"""
 
 monto = float(input('ingrese el monto de la compra '))
 tarjeta = input('ingrese tarjeta ')

@@ -1,7 +1,8 @@
-
-#! ejercicio 10
-#!  Dado un número determinar si el mismo es múltiplo de 2 o de 5, de ser así mostrar dicho
-#! número elevado al cubo
+"""
+Ejercicio 10
+Dado un número determinar si el mismo es múltiplo de 2 o de 5, de ser así mostrar dicho
+Número elevado al cubo
+"""
 
 #* opcion 1
 numero = int(input('ingrese un numero '))

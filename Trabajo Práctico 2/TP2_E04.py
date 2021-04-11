@@ -1,7 +1,9 @@
 
-#! ejercicio 4
-#! Dada las tres notas obtenidas por un alumno en los distintos parciales, determinar si el
-#! mismo está aprobado o desaprobado.
+"""
+Ejercicio 4
+Dada las tres notas obtenidas por un alumno en los distintos parciales, determinar si el
+mismo está aprobado o desaprobado.
+"""
 
 nota_1 = float(input('ingrese la nota 1: '))
 nota_2 = float(input('ingrese la nota 2: '))

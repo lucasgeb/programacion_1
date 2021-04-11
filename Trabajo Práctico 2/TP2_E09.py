@@ -1,10 +1,9 @@
 
-#! ejercicio 9
-#! Dado el nombre, apellido y año de nacimiento de tres personas mostrar los datos de los
-#! que son mayores de edad.
-
-#? corregir
-
+"""
+Ejercicio 9
+Dado el nombre, apellido y año de nacimiento de tres personas mostrar los datos de los
+que son mayores de edad.
+"""
 
 ano_actual = int(input('ingrese el año actual: '))
 
@@ -24,9 +23,13 @@ edad_persona_3 = ano_actual - ano_persona_3
 
 if(edad_persona_1 >= 18):
     print(nombre_persona_1, 'es mayor de edad, tiene ', ano_actual - ano_persona_1, "años")
-elif(edad_persona_2 >= 18):
+else:
+    print(nombre_persona_1, 'no es mayor de edad' )
+if(edad_persona_2 >= 18):
     print(nombre_persona_2, 'es mayor de edad, tiene ', ano_actual - ano_persona_2, "años")
-elif(edad_persona_3 >= 18):
+else:
+    print(nombre_persona_2, 'no es mayor de edad' )
+if(edad_persona_3 >= 18):
     print(nombre_persona_3, 'es mayor de edad, tiene ', ano_actual - ano_persona_3, "años")
 else:
-    print("fin del algoritmo")
+    print(nombre_persona_3, 'no es mayor de edad' )

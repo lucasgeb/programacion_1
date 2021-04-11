@@ -1,6 +1,8 @@
 
-#! ejercicio 3
-#!  Determinar si un número dado es par o impar
+"""
+Ejercicio 3
+Determinar si un número dado es par o impar
+"""
 
 numero = int(input(' ingrese un numero '))
 
