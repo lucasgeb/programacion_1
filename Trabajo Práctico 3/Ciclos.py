@@ -93,7 +93,7 @@
 #! Dada las notas de los 18 alumnos de un curso determinar cantidad de aprobados y
 #! desaprobados, y además el promedio de nota de los aprobados.
 
-#! ACUMULADOR
+# #! ACUMULADOR
 # suma = 0
 # #! CONTADOR
 # aprobado = 0
@@ -108,6 +108,7 @@
 #     else:
 #         print("no aprobó la materia")
 # print("el promedio es", suma/aprobado)
+# print("la cantidad de alumnos aprobados es ", aprobado)
     
 
 #! ejercicio 6
@@ -143,17 +144,17 @@
 #     else:
 #         print("el numero es negativo")
 
-positivos = 0
-negativos = 0
+# positivos = 0
+# negativos = 0
 
-numero = int(input('ingrese un numero '))
-while(numero != 0):
-    if(numero > 0):
-        positivos += 1
-    else:
-        negativos += 1
+# numero = int(input('ingrese un numero '))
+# while(numero != 0):
+#     if(numero > 0):
+#         positivos += 1
+#     else:
+#         negativos += 1
     
-    numero = int(input('ingrese un numero '))
+#     numero = int(input('ingrese un numero '))
 
-print("cantidad de positivos ", positivos)
-print("cantidad de negativos ", negativos)
+# print("cantidad de positivos ", positivos)
+# print("cantidad de negativos ", negativos)
