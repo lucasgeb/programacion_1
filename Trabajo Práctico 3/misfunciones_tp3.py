@@ -68,3 +68,30 @@ def vocal(caracter):
   
     if(caracter == "a" or caracter == "e" or caracter == "i" or caracter == "o" or caracter == "u"):
         return caracter, "Es vocal"
+    else:
+        print("no es vocal")
+
+
+def numero_mayor(numero1, numero2):
+    "determina que numero es mayor"
+
+    if(numero1 >= numero2):
+        return "el primer número es mayor"
+    else:
+        return "el segundo número es mayor"
+
+
+def intercambiar_variable(numero1, numero2):
+    "intercambia el valor de dos variables"
+
+    a = numero1
+    b = numero2
+    a, b = b, a
+    return (a , b)
+
+def aleatorio(numero1, numero2):
+    "elije un numero aleatorio entre dos numeros dados"
+
+    from random import randint
+
+    return randint(numero1, numero2)
