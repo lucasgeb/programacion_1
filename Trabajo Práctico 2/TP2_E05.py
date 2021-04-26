@@ -18,3 +18,4 @@ if(ano_postulante >= 18):
 else:
     print('no comple con los requisitos de edad')
 print('fin del algoritmo')
+

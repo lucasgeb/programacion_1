@@ -4,3 +4,5 @@
 letra = input("ingrese una letra ")
 
 print(vocal(letra)) 
+
+
