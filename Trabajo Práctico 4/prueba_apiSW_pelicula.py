@@ -8,7 +8,7 @@ def get_peliculas(ruta):
    # Imprimimos el resultado si el código de estado HTTP es 200 (OK):
    if req.status_code == 200:
         dic = json.loads(req.text)
-       return dic
+        return dic
 
 result = get_peliculas("https://swapi.dev/api/films/1/")
 
@@ -28,3 +28,4 @@ result = get_peliculas("https://swapi.dev/api/films/1/")
 
 print(result)
 """
+

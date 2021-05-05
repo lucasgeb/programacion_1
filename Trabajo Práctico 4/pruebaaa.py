@@ -1,10 +1,10 @@
 
-def busqueda(data, buscado):
-    pos = -1
-    for index, personaje in enumerate(data):
-        if(personaje["name"] == buscado):
-            pos = index
-    return pos
+# def busqueda(data, buscado):
+#     pos = -1
+#     for index, personaje in enumerate(data):
+#         if(personaje["name"] == buscado):
+#             pos = index
+#     return pos
 
 from consumo_api import get_all_sw_characters
 
@@ -56,10 +56,34 @@ sw_data = get_all_sw_characters()
 #             print(character["name"], character["height"])
 
 #! Mostrar todos los personajes con peso mayor a 100 kilos
-for character in sw_data:
-    if(character["mass"].isdecimal()):
-        if(int(character["mass"]) >= 100):
-            print(character["name"], character["mass"])
+# for character in sw_data:
+#     if(character["mass"].isdecimal()):
+#         if(int(character["mass"]) >= 100):
+#             print(character["name"], character["mass"])
+
+# sw_data = get_all_sw_characters()
+
 
 #! Mostrar todos los personajes del planeta natal Tatooine y Coruscant
+# for character in sw_data:
+#     if (character ["homeworld"] == "http://swapi.dev/api/planets/1/"):
+#         print( character ["name"], "  tatooine")
+#     elif (character ["homeworld"] == "http://swapi.dev/api/planets/9/"):
+#         print( character ["name"], "  Coruscant")
 
+
+
+# #! Mostrar todos los personajes de especie Kaleesh y Kaminoan
+
+# for character in sw_data:
+#     if (character ["species"] == "http://swapi.dev/api/species/32/"):
+#         print(character ["name"], character["species"])
+#     elif (character ["species"] == "http://swapi.dev/api/species/36/"):
+#         print(character ["name"], character["species"]) 
+
+#! Mostrar toda la informacion del planeta Coruscant (9) y Kamino (10)
+
+from consumo_api import get_planet_by_id
+
+data = get_planet_by_id(9) 
+print(data)
