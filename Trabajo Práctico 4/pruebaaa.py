@@ -50,10 +50,10 @@ sw_data = get_all_sw_characters()
 
 #! Mostrar todos los personajes con altura menor a 98 cm
 
-# for character in sw_data:
-#     if(character["height"].isdecimal()):
-#         if(int(character["height"]) < 98):
-#             print(character["name"], character["height"])
+for character in sw_data:
+    if(character["height"].isdecimal()):
+        if(int(character["height"]) < 98):
+            print(character["name"], character["height"])
 
 #! Mostrar todos los personajes con peso mayor a 100 kilos
 # for character in sw_data:
@@ -83,7 +83,7 @@ sw_data = get_all_sw_characters()
 
 #! Mostrar toda la informacion del planeta Coruscant (9) y Kamino (10)
 
-from consumo_api import get_planet_by_id
+# from consumo_api import get_planet_by_id
 
-data = get_planet_by_id(9) 
-print(data)
+# data = get_planet_by_id(9) 
+# print(data)
