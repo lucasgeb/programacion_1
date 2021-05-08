@@ -75,15 +75,15 @@ for character in sw_data:
 
 # #! Mostrar todos los personajes de especie Kaleesh y Kaminoan
 
-# for character in sw_data:
-#     if (character ["species"] == "http://swapi.dev/api/species/32/"):
-#         print(character ["name"], character["species"])
-#     elif (character ["species"] == "http://swapi.dev/api/species/36/"):
-#         print(character ["name"], character["species"]) 
+for character in sw_data:
+    if ("http://swapi.dev/api/species/32/" in character ["species"]):
+        print(character ["name"], character["species"])
+    elif ("http://swapi.dev/api/species/36/" in character ["species"] == ):
+        print(character ["name"], character["species"]) 
 
 #! Mostrar toda la informacion del planeta Coruscant (9) y Kamino (10)
 
 # from consumo_api import get_planet_by_id
 
 # data = get_planet_by_id(9) 
-# print(data)
+# print(data) 

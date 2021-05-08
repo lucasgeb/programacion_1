@@ -1,3 +1,5 @@
+#!/usr/bin/ python
+
 """
 ejercicio 5
 Determinar cuánto debe pagar el cliente de un estacionamiento, el precio se determina
