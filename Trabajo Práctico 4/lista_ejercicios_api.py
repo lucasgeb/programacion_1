@@ -9,3 +9,8 @@
 #! Mostrar toda la informacion de las naves usadas por Luke Skywalker
 #! Mostarr toda las peliculas en las que aparecio R2-D2
 #! Mostrar el resumen de la introduccion (opening_crawl) del episodio 4 "A New Hope" 
+
+#! Calcular el promedio de altura de todos los personajes
+#! Calcular el peso promedio de los personajes especie humanos
+#! Contar cuantos personajes especie droides y humanos hay
+#! Listar todos los personajes que comienzan con C, L, A

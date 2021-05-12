@@ -2,17 +2,51 @@ import json
 import requests
 
 
-# def busqueda(data, buscado):
-#     pos = -1
-#     for index, personaje in enumerate(data):
-#         if(personaje["name"] == buscado):
-#             pos = index
-#     return pos
+def get_docs(ruta):
+    req = requests.get(ruta)
+    # Imprimimos el resultado si el código de estado HTTP es 200 (OK):
+    if req.status_code == 200:
+        dic = json.loads(req.text)
+        return dic
 
-# from consumo_api import get_all_sw_characters
 
-# sw_data = get_all_sw_characters()
+def get_charter_by_id(id):
+    data = get_docs("https://swapi.dev/api/people/"+str(id))
+    return data
 
+def get_planet_by_id(id):
+    data = get_docs("https://swapi.dev/api/planets/"+str(id))
+    return data
+
+
+def search_characters_by_name(name):
+    data = get_docs("https://swapi.dev/api/people?search="+str(name))
+    return data['results']
+
+def get_all_sw_characters():
+
+    sw_data = []
+
+    data = get_docs("https://swapi.dev/api/people/")
+
+    while(data["next"] is not None):
+        for personaje in data["results"]:
+            sw_data.append(personaje) #print(doc["name"], doc["url"][28:-1])
+        data = get_docs(data["next"])
+    
+    return sw_data
+
+
+def busqueda(data, buscado):
+    pos = -1
+    for index, personaje in enumerate(data):
+        if(personaje["name"] == buscado):
+            pos = index
+    return pos
+
+
+
+sw_data = get_all_sw_characters()
 
 #! Mostrar toda la informacion de Yoda si esta en la Lista 
 
@@ -86,17 +120,23 @@ import requests
 
 #! Mostrar toda la informacion del planeta Coruscant (9) y Kamino (10)
 
-# def get_planet_by_id(id):
-#     data = get_docs("https://swapi.dev/api/homeworld"+str(id))
-#     return data
 
-# for character in sw_data:
 # data = get_planet_by_id(9) 
 # print(data) 
-
-# for character in sw_data:
 
 # data = get_planet_by_id(10) 
 # print(data) 
 
 #! Mostrar toda la informacion de las naves usadas por Luke Skywalker
+
+# for character in sw_data:
+
+#     if("Luke Skywalker" in character['name']):
+#         print(character ["name"], character["starships"]) 
+
+#! Mostarr toda las peliculas en las que aparecio R2-D2
+# for character in sw_data:
+#     if("R2-D2" in character['name']):
+#         print(character["name"], character["films"])
+
+#! Mostrar el resumen de la introduccion (opening_crawl) del episodio 4 "A New Hope"
