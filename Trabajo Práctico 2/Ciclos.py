@@ -34,9 +34,10 @@
 # datos.append("Ana")
 # datos.append("Julieta")
 # datos.insert(2, "mariano")
-# # datos.sort()
-# # datos.remove("Carlos")
+# datos.sort()
+# datos.remove("Carlos")
 # print(datos)
+
 
 
 
@@ -68,7 +69,6 @@
 #     numero = int(input('ingrese un numero '))
 #     if(numero % 2 == 0 and numero % 3 == 0):
 #         print("es múltiplo de 2 y de 3")
-
 #!Dada una lista de 15 personas de las que se conoce nombre y edad, determinar cúantas son mayopres de eedad
 
 # datos = []

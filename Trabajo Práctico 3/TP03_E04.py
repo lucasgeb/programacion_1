@@ -5,5 +5,6 @@
 from misfunciones_tp3 import contar_caracter
 
 cadena = "hola mostro"
+caracter = "o"
 
-print(contar_caracter(cadena, "o"))
+print(cadena, "tiene", contar_caracter(cadena, caracter), "caracteres", caracter)

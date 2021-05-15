@@ -8,7 +8,7 @@ pagar.
 costo_kw = float(input("valor en pesos del kw/h"))
 kw_consumidos =float(input('cantidad de kw/h consumidos'))
 
-total_con_impuesto = round(costo_kw * kw_consumidos * 0.21, 2)
+total_con_impuesto = round(costo_kw * kw_consumidos * 1.021, 2)
 
 total_a_pagar = round(total_con_impuesto * 0.963, 2)
 
