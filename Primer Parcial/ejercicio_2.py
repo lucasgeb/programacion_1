@@ -52,7 +52,11 @@ for index, personaje in enumerate(sw_data):
 #! b. Indicar los personajes que aparecieron en las 6 películas
 
 
+# así no anda
+# for personaje in sw_data:
+#     if ("http://swapi.dev/api/films/1/" and "http://swapi.dev/api/films/2/"  and "http://swapi.dev/api/films/3/"  and "http://swapi.dev/api/films/4/"  and "http://swapi.dev/api/films/5/"  and "http://swapi.dev/api/films/6/"  in personaje['films']):
+#         print(personaje["name"], "estuvo en las 7 peliculas")
+
 for personaje in sw_data:
-    if ("http://swapi.dev/api/films/1/" and "http://swapi.dev/api/films/2/"  and "http://swapi.dev/api/films/3/"  and "http://swapi.dev/api/films/4/"  and "http://swapi.dev/api/films/5/"  and "http://swapi.dev/api/films/6/"  in personaje['films']):
-        print(personaje["name"], "estuvo en las 7 peliculas")
-    
+    if(len(personaje["films"]) == 6):
+        print(personaje["name"])
