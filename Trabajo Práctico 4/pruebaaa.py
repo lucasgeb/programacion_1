@@ -9,9 +9,9 @@ import requests
 #             pos = index
 #     return pos
 
-# from consumo_api import get_all_sw_characters
+from consumo_api import get_all_sw_characters
 
-# sw_data = get_all_sw_characters()
+sw_data = get_all_sw_characters()
 
 
 #! Mostrar toda la informacion de Yoda si esta en la Lista 
@@ -100,3 +100,61 @@ import requests
 # print(data) 
 
 #! Mostrar toda la informacion de las naves usadas por Luke Skywalker
+
+
+#! Calcular el promedio de altura de todos los personajes (acumulador, contador)
+
+# def altura(item):
+#     # print(item, type(item))
+#     if(item['height'].isdecimal()):
+#         return int(item['height'])
+#     else:
+#         return 0
+
+# altura_personajes= 0
+# personajes = 80
+
+# for character in sw_data:
+#    altura_personajes += altura(character)
+# print(altura_personajes/personajes)
+
+
+
+#! Calcular el peso promedio de los personajes especie humanos (acumulador especie, contador)
+/# def peso(item):
+#     if(item['mass'].isdecimal()):
+#         return float(item['mass'])
+#     else:
+#         return 0
+
+# peso_personajes_humano= 0
+# personajes_humano = 0
+
+# for character in sw_data:
+#    if ("http://swapi.dev/api/species/1/" in character['species']):
+#     peso_personajes_humano += peso(character)
+#     personajes_humano += 1
+# print("el peso promedio de los humanos es: ", peso_personajes_humano/personajes_humano)
+
+
+#! Contar cuantos personajes especie droides y humanos hay (contador y contador)
+
+personaje_droide = 0
+personaje_humano = 0
+
+for character in sw_data:
+   if ("http://swapi.dev/api/species/1/" in character['species']):
+        personaje_humano += 1
+   elif ("http://swapi.dev/api/species/2/" in character['species']):
+       personaje_droide += 1
+       
+
+print("Hay: ", personaje_droide, "personajes droides")
+print("Hay: ", personaje_humano, "personajes humanos")
+
+#! Listar todos los personajes que comienzan con C, L, A
+
+
+# for character in sw_data:
+#     if(character['name'][0] in ['C', 'L', 'A']):
+#         print(character['name'])
