@@ -1,5 +1,6 @@
 from weather_API import clima_por_lat_lon
 from weather_API import clima_por_ciudad
+from weather_API import pronostico_por_lat_lon
 
 
 
@@ -13,7 +14,13 @@ data = clima_por_ciudad(ciudad)
 
 print(data)
 
-lat= input("ingrese latitud: ")
+lat = input("ingrese latitud: ")
+lon = input("ingre la longitud: ")
+data = pronostico_por_lat_lon(lat, lon)
+
+print(data)
+
+lat = input("ingrese latitud: ")
 lon = input("ingre la longitud: ")
 data = clima_por_lat_lon(lat, lon)
 
