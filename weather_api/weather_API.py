@@ -72,8 +72,8 @@ def pronostico_ciudad(ciudad):
         'Presión' : str(item['main']['pressure']),
         'Humedad' : str(item['main']['humidity']),
             }
-    print(info)
-    print()
+    
+    return info
    
 
 
@@ -101,7 +101,7 @@ def pronostico_coord(lat, lon):
         'Humedad' : item['main']['humidity'],
             },
         
-    print(info)
+    return info
     
 
 
