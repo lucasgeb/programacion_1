@@ -66,11 +66,11 @@ def pronostico_ciudad(ciudad):
     data_pronostico_ciudad = json.loads(response.content)
     for item in data_pronostico_ciudad['list']:
         info = {
-        'Fecha' : str(item['dt_txt']),
-        'Temperatura' : str(item['main']['temp']),
-        'Sensación térmica' : str(item['main']['feels_like']),
-        'Presión' : str(item['main']['pressure']),
-        'Humedad' : str(item['main']['humidity']),
+        'Fecha' : item['dt_txt'],
+        'Temperatura' : item['main']['temp'],
+        'Sensación térmica' : item['main']['feels_like'],
+        'Presión' : item['main']['pressure'],
+        'Humedad' : item['main']['humidity'],
             }
     
     return info
