@@ -1,7 +1,7 @@
 """
 ejercicio 18
 Dada las tres mediciones que se realizó un pluviómetro en un día, cada vez que el mismo
-se vacía, determinar cuántos milímetros llovió ese día.
+se vacía, determinar cuántos milímetros llovió ese día  cambio
 
 """
 medicion_1 = float(input('indique los mm de la primer medición: '))
